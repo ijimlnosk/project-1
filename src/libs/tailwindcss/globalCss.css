@@ -31,13 +31,16 @@ body {
         @apply w-[600px] h-[400px];
     }
     /* 24평형 화장실 위치 */
-    .position-min-size {
+    .position-min-24-right-washroom-location {
         @apply top-24 right-6;
     }
-    .posiotion-small-size {
+    .position-min-24-left-washroom-location {
+        @apply top-16 left-[74px];
+    }
+    .posiotion-small-location {
         @apply top-32 right-8;
     }
-    .position-medium-size {
+    .position-medium-location {
         @apply top-48 right-[49px];
     }
 }

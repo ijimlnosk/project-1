@@ -2,6 +2,7 @@ import useLockBodyScroll from "../hooks/useLockBodyScroll";
 
 export type ViewMoalProps = {
     imgSrc: string;
+    alt: string;
     isOpen: boolean;
     onClose: () => void;
     title: string;
@@ -10,6 +11,7 @@ export type ViewMoalProps = {
 
 const ViewModal = ({
     imgSrc,
+    alt,
     isOpen,
     onClose,
     title,
@@ -33,7 +35,7 @@ const ViewModal = ({
                     <div className="text-sm">{description}</div>
                 </div>
                 <div className="flex-center w-[250px] h-[250px] md:w-[600px] md:h-[600px]">
-                    <img src={imgSrc} alt="example image" />
+                    <img src={imgSrc} alt={alt} />
                 </div>
                 <div className=" absolute top-1.5 right-6">
                     <button
