@@ -18,3 +18,26 @@ body {
 .flex-center {
     @apply flex justify-center items-center;
 }
+
+@layer utilities {
+    /* 24평형 도면 크기 */
+    .min-size {
+        @apply w-[300px] h-[150px];
+    }
+    .small-size {
+        @apply w-[400px] h-[200px];
+    }
+    .medium-size {
+        @apply w-[600px] h-[400px];
+    }
+    /* 24평형 화장실 위치 */
+    .position-min-size {
+        @apply top-24 right-6;
+    }
+    .posiotion-small-size {
+        @apply top-32 right-8;
+    }
+    .position-medium-size {
+        @apply top-48 right-[49px];
+    }
+}

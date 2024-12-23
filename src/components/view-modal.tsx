@@ -25,20 +25,15 @@ const ViewModal = ({
             onClick={onClose}
         >
             <div
-                className=" fixed w-[80%] h-[80%] bg-white p-4 z-50 rounded-lg shadow-lg flex flex-col items-center justify-between"
+                className=" fixed w-[80%] h-[50%] md:h-[80%] bg-white p-4 z-50 rounded-lg shadow-lg flex flex-col items-center justify-between"
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className=" flex-center flex-col">
                     <div className="text-xl font-bold">{title}</div>
                     <div className="text-sm">{description}</div>
                 </div>
-                <div className="flex-center">
-                    <img
-                        src={imgSrc}
-                        alt="example image"
-                        width={600}
-                        height={600}
-                    />
+                <div className="flex-center w-[300px] h-[300px] md:w-[600px] md:h-[600px]">
+                    <img src={imgSrc} alt="example image" />
                 </div>
                 <div className=" absolute top-1.5 right-6">
                     <button

@@ -4,11 +4,9 @@ import ViewModal from "./view-modal";
 export type FloorPlanProps = {
     url: string;
     alt: string;
-    width: string;
-    height: string;
 };
 
-const FloorPlan = ({ url, alt, width, height }: FloorPlanProps) => {
+const FloorPlan = ({ url, alt }: FloorPlanProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -20,17 +18,14 @@ const FloorPlan = ({ url, alt, width, height }: FloorPlanProps) => {
                 title="TITLE"
                 description="대충 설명들"
             />
-            <div className=" relative">
-                <img
-                    src={url}
-                    alt={alt}
-                    width={`${width}px`}
-                    height={`${height}px`}
-                />
+            <div className="relative min-size md:medium-size sm:small-size">
+                <img src={url} alt={alt} />
                 <div
-                    className=" absolute w-[80px] h-[120px] top-48 right-[49px] z-40 cursor-pointer"
+                    className=" absolute z-40 position-min-size h-[40%]  sm:position-smaill-size md:position-medium-size sm:w-[14.5%] sm:h-[32%] md:w-[14.5%] md:h-[30%] cursor-pointer text-sm border-black border-2"
                     onClick={() => setIsOpen(true)}
-                ></div>
+                >
+                    화장실
+                </div>
             </div>
         </div>
     );

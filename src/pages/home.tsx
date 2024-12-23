@@ -7,8 +7,6 @@ const Home = () => {
                 <FloorPlan
                     url={"/assets/image/24_floor_plan.jpg"}
                     alt="24평형 도면"
-                    width="600"
-                    height="400"
                 />
             </div>
         </div>
