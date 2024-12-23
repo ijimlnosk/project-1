@@ -14,7 +14,7 @@ const FloorPlan = ({ url, alt, width, height }: FloorPlanProps) => {
     return (
         <div className="w-full h-full flex-center">
             <ViewModal
-                imgSrc="/src/assets/image/ex_Washroom.jpg"
+                imgSrc="../assets/image/ex_Washroom.jpg"
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)}
                 title="TITLE"
