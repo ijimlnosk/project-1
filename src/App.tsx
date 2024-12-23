@@ -3,7 +3,7 @@ import router from "./libs/router";
 
 function App() {
     return (
-        <div>
+        <div className="font-NotoSans">
             <RouterProvider router={router}></RouterProvider>
         </div>
     );

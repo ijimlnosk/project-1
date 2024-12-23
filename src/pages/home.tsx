@@ -1,7 +1,16 @@
+import FloorPlan from "../components/floor-plan";
+
 const Home = () => {
     return (
-        <div>
-            <div>Home</div>
+        <div className="w-full h-screen pt-20 flex-center">
+            <div className=" w-[1280px] h-full border flex-center text-2xl">
+                <FloorPlan
+                    url={"/src/assets/image/24_floor_plan.jpg"}
+                    alt="24평형 도면"
+                    width="600"
+                    height="400"
+                />
+            </div>
         </div>
     );
 };
