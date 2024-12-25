@@ -34,7 +34,7 @@ const ViewModal = ({
                     <div className="text-xl font-bold">{title}</div>
                     <div className="text-sm">{description}</div>
                 </div>
-                <div className="flex-center w-[250px] h-[250px] md:w-[600px] md:h-[600px]">
+                <div className="flex-center w-[250px] h-[250px] md:w-[500px] md:h-[500px]">
                     <img src={imgSrc} alt={alt} />
                 </div>
                 <div className=" absolute top-1.5 right-6">
